@@ -1,6 +1,5 @@
 #include <bits/stdc++.h>
 using namespace std;
-
 int main(){
     string s1, s2; cin>>s1>>s2;
     int n1 = s1.length(); int n2 = s2.length();
@@ -12,6 +11,5 @@ int main(){
             dp[i][j]=min({dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1]+(s1[i-1]!=s2[j-1] ? 1:0)});
         }
     }
-
     cout<<dp[n1][n2];
 }

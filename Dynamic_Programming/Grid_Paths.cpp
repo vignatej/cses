@@ -1,8 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-
-
 int main(){
     ll n; cin>>n;
     ll M = 7+(int)1e9;
@@ -18,5 +16,4 @@ int main(){
         }
     }
     cout<<dp[n-1][n-1];
-
 }

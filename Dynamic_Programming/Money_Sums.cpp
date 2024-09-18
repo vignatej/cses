@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long
-
 vector<int> solve(vector<int> & coins, int s, int e){
     if(s>e) return {};
     if(s==e) return {coins[s]};
@@ -16,13 +15,9 @@ vector<int> solve(vector<int> & coins, int s, int e){
     copy(ans.begin(), ans.end(), back_inserter(av));
     return av;
 }
-
 int main(){
     int n; cin>>n; vector<int> v(n);
     for(int i = 0;i<n;i++) cin>>v[i];
-    // auto ans = solve(v, 0, n-1);
-    // cout<<ans.size()<<'\n';
-    // for(auto &i: ans) cout<<i<<' ';
     int ma = 100000;
     vector<vector<bool>> dp(n, vector<bool> (ma+1, false));
     for(int i = 0;i<n;i++) dp[i][0]=1;
