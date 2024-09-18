@@ -4,7 +4,6 @@ using namespace std;
 int main(){
     ll n, x; cin>>n>>x;
     vector<ll> v(n); for(int i = 0;i<n;i++) cin>>v[i];
-    // vector<vector<ll>> dp(n, vector<ll> (x+1, 0));
     vector<ll> prev(x+1, 0), curr(x+1, 0);
     ll M = (int)1e9 + 7;
     for(int i = 0;i<n;i++){

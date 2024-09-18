@@ -16,5 +16,4 @@ int main(){
         prev=curr;
     }
     cout<<prev[x];
-
 }

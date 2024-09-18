@@ -15,7 +15,6 @@ ll calc(ll n, vector<ll> & coins){
     dp[n]=ans;
     return ans;
 }
-
 int main(){
     ll n, x; cin>>n>>x;
     vector<ll> v(n); for(int i = 0;i<n;i++) cin>>v[i];
