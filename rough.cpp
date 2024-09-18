@@ -17,6 +17,4 @@ signed main(){
         s.erase(i-1); s.insert(i);
     }
     cout<<s.size();
-    
-
 }
