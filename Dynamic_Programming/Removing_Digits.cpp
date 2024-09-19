@@ -15,7 +15,6 @@ ll do_it(ll n){
     dp[n]=ans;
     return ans;
 }
-
 int main(){
     ll n; cin>>n;
     dp.resize(n+1, -1);
