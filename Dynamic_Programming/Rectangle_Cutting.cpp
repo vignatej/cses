@@ -15,9 +15,6 @@ using namespace std;
 
 int main(){
     int a, b; cin>>a>>b;
-    // dp.resize(a+1, vector<int>(b+1, -1));
-
-    // cout<<solve(a, b);
     vector<vector<ll>> dp(a+1, vector<ll> (b+1, INT_MAX));
     for(int i = 1;i<=a;i++){
         for(int j = 1;j<=b;j++){
